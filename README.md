@@ -9,14 +9,21 @@ This proxy is based on the official Active Campaign API PHP Starter Kit found in
 Active Campaign has limited fields for the contact, and will not take all fields out of the box that we are passing. Specifically, only the following fields are in an AC Contact
 
 **contactEmail** 
+
 This is the unique identifier of the contact in AC, all other fields bind to this. If a new email 
 
+
 **first_name**
+
 **last_name**
+
 **phone**
 
 **fieldValues**
+
 These contain value pairs for additional contact fields that the admin of AC must add and enable.
+
+
 
 ```
 {
