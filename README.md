@@ -66,9 +66,9 @@ Current URL is: https://qs-demo-proxy.herokuapp.com/
 
 ```
 /
-/web 					--- contains the files served on the web, as defined in the Procfile
+/web					--- contains the files served on the web, as defined in the Procfile
 /web/index.php 			--- holds the demo form which is a simple post to the proxy
-/web/demo-proxy.php 	--- the proxy
+/web/demo-proxy.php 		--- the proxy
 /web/includes/			--- the activecampaign php api library
 /web/vendor/			--- composer for supporting heroku
 /web/images/			--- placeholder
