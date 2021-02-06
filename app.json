@@ -1,6 +1,6 @@
 {
-  "name": "Start on Heroku: PHP",
-  "description": "A barebones PHP app that makes use of the Silex web framework",
-  "repository": "https://github.com/heroku/php-getting-started",
+  "name": "QS Demo Proxy",
+  "description": "A simple PHP proxy that makes use of the Silex web framework, and the ActiveCampaign PHP API Quickstart",
+  "repository": "https://github.com/joecorr/qs-demo-proxy",
   "addons": []
 }
