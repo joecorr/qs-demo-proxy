@@ -26,6 +26,13 @@
 	print_r($account);
 	echo "</pre>";
 
+
+
+
+
+
+
+
 	/*
 	 * ADD OR EDIT CONTACT (TO THE NEW LIST CREATED ABOVE).
 	 */
@@ -35,12 +42,20 @@
 	$hardcoded_list_id = 4;
 	$passed_contact = array(
 		"email"				=> $_POST['contactEmail'],
-		"first_name"		=> $_POST['firstName'],
-		"last_name"			=> $_POST['lastName'],	// the following are active id requirements to place this contact in a list
+		"first_name"		=> $_POST['contactFirstName'],
+		"last_name"			=> $_POST['contactLastName'],	// the following are active id requirements to place this contact in a list
 		"p[{$hardcoded_list_id}]"      => $hardcoded_list_id,
 		"status[{$hardcoded_list_id}]" => 1 // Make it "Active" status
 	);
 	$contact_sync = $ac->api("contact/sync", $passed_contact);
+
+
+
+
+
+
+
+
 
 	if (!(int)$contact_sync->success) {
 		// request failed
