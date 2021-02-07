@@ -1,8 +1,7 @@
 # qs-demo-proxy
 
-A simple PHP proxy that makes use of the Silex web framework, and the ActiveCampaign PHP API Quickstart.
+A simple PHP proxy that makes use of the Silex web framework, and the ActiveCampaign API docs.
 
----This proxy is based on the official Active Campaign API PHP Starter Kit found in their repo https://github.com/ActiveCampaign/activecampaign-api-php ---
 
 ## Notes
 
