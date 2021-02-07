@@ -33,7 +33,7 @@ From the working form, we need to simulate these values
   | 'yourStory'
 
 -->
-<form action="demo-proxy.php" method="post">
+<form action="simple-proxy.php" method="post">
  <ul>
   <li>
     <label for="contactEmail">contactEmail:</label>

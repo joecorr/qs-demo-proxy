@@ -9,12 +9,14 @@ curl_setopt($cURLConnection, CURLOPT_URL, 'https://doublenines.api-us1.com/api/3
 curl_setopt($cURLConnection, CURLOPT_RETURNTRANSFER, true);
 
 $customFieldList = curl_exec($cURLConnection);
-curl_close($cURLConnection);
 
-$jsonArrayResponse - json_decode($customFieldList);
+
+
+$jsonArrayResponse = json_decode($customFieldList);
 
 echo "<pre>";
 print_r(($jsonArrayResponse));
 echo "</pre>";
 
+curl_close($cURLConnection);
 ?>
