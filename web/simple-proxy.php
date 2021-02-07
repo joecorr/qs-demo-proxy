@@ -40,11 +40,15 @@ print_r($postvars);
 echo "</pre>";
 */
 curl_setopt($cURLConnection, CURLOPT_POSTFIELDS,$postvars);
-
+echo "foo";
 
 $curlResult = curl_exec($cURLConnection);
 
-
+if (curl_exec($cURLConnection) === false) {
+    echo "ok";
+} else {
+    echo "error";
+}
 
 $jsonArrayResponse = json_decode($curlResult);
 /*
