@@ -47,7 +47,15 @@ These contain value pairs for additional contact fields that the admin of AC mus
 
 ## Documentation
 
-Refer to the documentation from active campaign found here 
+This contains 2 test html forms that capture all unrequired, unvalidated fields, and passes them to a proxy for each 3rd party endpoint. 
+
+In the future, you could continue to use and modify these proxies, instead of having to modify the front end code to pass the payload to Active Campaign and the new Submission API endpoint.
+
+There is also value in using these proxies and application files within the same subdomain, to avoid security issues.
+
+## Active Campaign API
+
+This is currently using the Doublenines API Key. This Endpoint will be active until 2/31/2021, but data and key are tied to the 99s Team Account. The API Key is found . This should be irrelevant as soon as 2/10/2021.
 
 ### Getting Started
 https://help.activecampaign.com/hc/en-us/articles/207317590-Getting-started-with-the-API
@@ -65,10 +73,14 @@ Current URL is: https://qs-demo-proxy.herokuapp.com/
 
 ```
 /
-/web				--- contains the files served on the web, as defined in the Procfile
-/web/index.php 			--- holds the demo form which is a simple post to the proxy
-/web/simple-proxy.php 		--- the proxy
+/web					--- contains the files served on the web, as defined in the Procfile
+/web/form-test-activecampaign.html	--- test form for active campaign
+/web/form-test-formbackend.html		--- test form for temp submission api
+/web/api/simple-proxy-activecampaign.php -- proxy submission api, currently <> 99s API Token for activecampaign.com
+/web/api/simple-proxy-formbackend.php	--- proxy active campaign api, currently <> 99s Account for formbackend.com
+
 /web/vendor/			--- composer for supporting heroku
+/*				--- application package and heroku environmental files
 ```
 
 
