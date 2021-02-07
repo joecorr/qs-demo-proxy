@@ -1,6 +1,6 @@
 # qs-demo-proxy
 
-A simple PHP proxy that makes use of the Silex web framework, and the ActiveCampaign API docs.
+Two simple PHP proxies built for ivanvpan/qsform (https://github.com/ivanvpan/qsform): One for ActiveCampaign progressive contact syncing, and one for simulating the new QS Submission API via a third party service at Formbackend.com
 
 
 ## Notes
@@ -79,6 +79,7 @@ Current URL is: https://qs-demo-proxy.herokuapp.com/
 /web/api/simple-proxy-activecampaign.php -- proxy submission api, currently <> 99s API Token for activecampaign.com
 /web/api/simple-proxy-formbackend.php	--- proxy active campaign api, currently <> 99s Account for formbackend.com
 
+/web/tools/getCustomFields.php	--- non-integrated tool for looking up the id's of the contact fields at activecampaign
 /web/vendor/			--- composer for supporting heroku
 /*				--- application package and heroku environmental files
 ```
