@@ -84,6 +84,12 @@ class AC_Contact extends ActiveCampaign {
 	function sync($params, $post_data) {
 		$request_url = "{$this->url}&api_action=contact_sync&api_output={$this->output}";
 		if ($params) $request_url .= "&{$params}";
+
+
+		echo "<em>contact.class.php</em><pre>";
+		print_r($post_data);
+		echo "</pre><br />";
+
 		$response = $this->curl($request_url, $post_data);
 		return $response;
 	}

@@ -40,13 +40,25 @@
 	// demo is unused, for reference or quick use only
 	// here is the list ID to use for the demo: 4
 	$hardcoded_list_id = 4;
+	
+	$businessName_arr =  array("field"=>"1","value"=>$_POST['businessName']);
+   	$passed_fieldValues = array($businessName_arr);
+	
+   	$stringed = '[{"field":"1","value":"The Value for First Field"}]';
 	$passed_contact = array(
 		"email"				=> $_POST['contactEmail'],
 		"first_name"		=> $_POST['contactFirstName'],
-		"last_name"			=> $_POST['contactLastName'],	// the following are active id requirements to place this contact in a list
+		"last_name"			=> $_POST['contactLastName'],	
+		"phone"				=> $_POST['contactPhoneNumber'],	
+		"fieldValues"		=> $stringed,	
+
+		// the following are active id requirements to place this contact in a list
 		"p[{$hardcoded_list_id}]"      => $hardcoded_list_id,
 		"status[{$hardcoded_list_id}]" => 1 // Make it "Active" status
 	);
+	echo "<pre>";
+	print_r($passed_contact);
+	echo "</pre><br />";
 	$contact_sync = $ac->api("contact/sync", $passed_contact);
 
 
