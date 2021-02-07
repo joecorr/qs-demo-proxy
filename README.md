@@ -2,7 +2,7 @@
 
 A simple PHP proxy that makes use of the Silex web framework, and the ActiveCampaign PHP API Quickstart.
 
-This proxy is based on the official Active Campaign API PHP Starter Kit found in their repo https://github.com/ActiveCampaign/activecampaign-api-php
+---This proxy is based on the official Active Campaign API PHP Starter Kit found in their repo https://github.com/ActiveCampaign/activecampaign-api-php ---
 
 ## Notes
 
@@ -68,11 +68,8 @@ Current URL is: https://qs-demo-proxy.herokuapp.com/
 /
 /web				--- contains the files served on the web, as defined in the Procfile
 /web/index.php 			--- holds the demo form which is a simple post to the proxy
-/web/demo-proxy.php 		--- the proxy
-/web/includes/			--- the activecampaign php api library
+/web/simple-proxy.php 		--- the proxy
 /web/vendor/			--- composer for supporting heroku
-/web/images/			--- placeholder
-/web/stylesheets/		--- placeholder
 ```
 
 
